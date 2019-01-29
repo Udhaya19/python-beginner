@@ -1,6 +1,8 @@
+
+num1 = int(input("Enter the number1"))
+num2 = int(input("Enter the number2"))
+
 def defal_param():
-    num1 = int(input("Enter the number1"))
-    num2 = int(input("Enter the number2"))
     if num1 == num2:
         print((num1 + num2) * 2)
     else:
@@ -8,3 +10,4 @@ def defal_param():
 
 
 defal_param()
+
