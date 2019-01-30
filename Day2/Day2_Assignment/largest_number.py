@@ -11,7 +11,7 @@ def create_list():
 def max_number(list1):
     max = list1[0]
     for num in list1:
-        if num > max:
+        if num >= max:
             max = num
     print("The given list maximum number is",max)
     return max

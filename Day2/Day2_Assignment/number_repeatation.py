@@ -9,5 +9,5 @@ array_1.sort()
 print("sorted list is:", array_1)
 for i in range(len(array_1) - 1):
     if array_1[i] == array_1[i + 1]:
-        print(array_1[i])
-        print(array_1.count(array_1[i]))
+        print()
+        print("{} : {} times".format(array_1[i],array_1.count(array_1[i])))
