@@ -1,18 +1,20 @@
-string = input("Enter the string:")
-num = len(string)
-
-
 def non_reapeating_char():
+    string = input("Enter the string:")
+    num = len(string)
+
     for i in range(0, num + 1):
         if i == 0:
+
             if string[i] != string[i + 1]:
                 print(string[i])
-                break
+                # break
         elif i == num + 1:
+
             if string[i] != string[i - 1]:
                 print(string[i])
-                break
+                # break
         else:
+
             if string[i] != string[i + 1] and string[i] != string[i - 1]:
                 print(string[i])
                 break
