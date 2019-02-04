@@ -1,9 +1,9 @@
-def remove_duplicate_item():
-    list1 = [1,2,3,4]
-    list2=[2,3,5,6]
-    for list1 in list2:
-        list1.append(list1.remove())
+def remove_duplicate_item(elements):
+    list1=[]
+    for i in elements:
+        if i not in list1:
+            list1.append(i)
     return list1
 
-
-print(remove_duplicate_item())
+elements=[1,2,3,2,1,25,6]
+print(remove_duplicate_item(elements))
