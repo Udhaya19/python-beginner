@@ -28,7 +28,4 @@ print("multilevel_inheritance")
 w=amount_withdraw(60758473,"udhaya",4,500)
 w.display_withdraw_amount()
 
-print("------------------------------")
-print("single_inheritance")
-s=saving_acct(60567483,"keerthi",5)
-s.display_sav_acct_details()
+
