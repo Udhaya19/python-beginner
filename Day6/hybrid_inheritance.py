@@ -24,10 +24,20 @@ class current_acct(Bank_Account):
 
     def display_current_acct_details(self):
         print("The over draft value of account is:", self.over_draft)
-class loan_details(saving_acct,current_acct):
-    def __init__(self,Acct_no,Acct_name):
 
 
-a = current_acct(605674839, "Udhaya", 6)
-a.bank_details()
-a.display_current_acct_details()
+class loan_details(saving_acct, current_acct):
+    def __init__(self, Acct_no, Acct_name, interest, over_draft, emi):
+        saving_acct.__init__(self, Acct_no, Acct_name, interest)
+        current_acct.__init__(self, Acct_no, Acct_name, over_draft)
+        self.emi = emi
+
+    def display_loan_details(self):
+        print("The EMI details:", self.emi)
+
+print("HYbrid inheritance")
+l = loan_details(60567483, "udhaya", 4, 7, 1500)
+l.bank_details()
+l.display_sav_acct_details()
+l.display_current_acct_details()
+l.display_loan_details()
