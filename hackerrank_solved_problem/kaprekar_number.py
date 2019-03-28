@@ -25,6 +25,6 @@ def kaprekar_number(p, q):
             print(value, end=' ')
 
 
-p = 1
-q = 100
+p = 100
+q = 200
 kaprekar_number(p, q)
