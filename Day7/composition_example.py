@@ -8,9 +8,9 @@ class Department:
 
 
 class Institution:
-    def __init__(self, inst_name, Department):
+    def __init__(self, inst_name, department):
         self.inst_name = inst_name
-        self.pp = Department
+        self.pp = department
 
     def get_institution_details(self):
         print("Institution details:", self.inst_name, self.pp.get_student_details())
